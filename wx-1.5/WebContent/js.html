@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/jquery1.91.js"></script>
+<title>js</title>
+</head>
+<body>
+ <script>
+function myFunction()
+{
+	//var td_v ="---";
+  var td_v = $("#cw").find("tr").eq(1).find("td").eq(1).value();
+ //var td_v = $("#cw").text();
+ // var td_length =$("#cw").find("tr").length;
+ 
+ 
+             
+ alert(td_v);
+}
+</script>
+<table border="1" id="cw">
+<tr><td>11</td><td>12</td><td>13</td></tr>
+<tr ><td>21</td><td>22</td><td>23</td></tr>
+<tr><td>31</td><td>32</td><td>33</td></tr>
+ </table>
+ <input id="dddd" type="txt" value="提交" onclick=myFunction()>
+ 
+ <p>
+ <input type="button" value="提交" onclick=myFunction()>
+ 
+ </p>
+ 
+</body>
+</html>

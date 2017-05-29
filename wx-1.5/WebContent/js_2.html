@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/jquery1.91.js"></script>
+<title>js</title>
+</head>
+<body>
+ <script>
+ window.onload = function() { 
+	 
+	// $("#myt").find("tr").eq(3).hide();
+	 
+ }
+function myFunction()
+{
+	//var td_v ="---";
+	$("#myt").find("tr").eq(2).toggle();
+    $("#myt").find("tr").eq(3).toggle();
+    
+ //var td_v = $("#cw").text();
+ // var td_length =$("#cw").find("tr").length;
+ 
+ 
+             
+  
+}
+</script>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" id="myt" style="border: currentColor; width: 553px;">
+	<colgroup class="ck-tableresize-colgroup">
+		<col style="width: 80px;" />
+		<col style="width: 106px;" />
+		<col style="width: 78px;" />
+		<col style="width: 102px;" />
+		<col style="width: 75px;" />
+		<col style="width: auto;" />
+	</colgroup>
+	<caption>
+	<h2 style="text-align: center;">物品放行条</h2>
+	</caption>
+	<tbody>
+		<tr style="height: 21.85pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+			<td style="padding: 0cm 5.4pt; border: 1pt solid windowtext; height: 21.85pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-hansi-font-family: &quot;Times New Roman&quot;;">申请部门</span></p>
+			</td>
+			<td style="border-style: solid solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><input class="AUTO" datafld="SYS_DEPTNAME_SHORT" hidden="0" name="DATA_4" style="width: 80px; font-size: 12px;" title="申请部门" type="text" value="{MACRO}" /></p>
+			</td>
+			<td style="border-style: solid solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-hansi-font-family: &quot;Times New Roman&quot;;">申请人</span></p>
+			</td>
+			<td style="border-style: solid solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<div style="text-align: center;"><input class="AUTO" datafld="SYS_USERNAME" hidden="0" name="DATA_7" style="width: 80px; font-size: 12px;" title="申请人" type="text" value="{MACRO}" /></div>
+			</td>
+			<td style="border-style: solid solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-hansi-font-family: &quot;Times New Roman&quot;;">申请日期</span></p>
+			</td>
+			<td style="border-style: solid solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><input class="AUTO" datafld="SYS_DATE" hidden="0" name="DATA_8" style="width: 120px; font-size: 12px;" title="申请日期" type="text" value="{MACRO}" /></p>
+			</td>
+		</tr>
+		<tr style="height: 21.85pt; mso-yfti-irow: 1;">
+			<td style="border-style: none solid solid; padding: 0cm 5.4pt; height: 21.85pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-hansi-font-family: &quot;Times New Roman&quot;;">部门审核</span></p>
+			</td>
+			<td colspan="2" style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><select name="DATA_9" style="width: 140px;" title="部门审核意见"><option selected="selected" value="同意.">同意.</option><option value="反对.">反对.</option><option value="会签意见.">会签意见.</option></select><input class="AUTO" datafld="SYS_USERNAME_DATETIME" hidden="0" name="DATA_10" style="width: 140px; font-size: 10px;" title="部门审核人" type="text" value="{MACRO}" /></p>
+			</td>
+			<td style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; mso-bidi-font-family: 宋体;">领导审批</span></p>
+			</td>
+			<td colspan="2" style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 21.85pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><select name="DATA_11" style="width: 140px;" title="领导审批意见"><option selected="selected" value="同意.">同意.</option><option value="反对.">反对.</option><option value="会签意见.">会签意见.</option></select><br />
+			<input class="AUTO" datafld="SYS_USERNAME_DATETIME" hidden="0" name="DATA_12" style="width: 140px; font-size: 10px;" title="审批人" type="text" value="{MACRO}" /></p>
+			</td>
+		</tr>
+		<tr style="height: 37.6pt; mso-yfti-irow: 2;">
+			<td style="border-style: none solid solid; padding: 0cm 5.4pt; height: 37.6pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-hansi-font-family: &quot;Times New Roman&quot;;">物品明细<br />
+			(非报废)</span></p>
+			</td>
+			<td colspan="5" style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 37.6pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			111111111111111111
+			</td>
+		</tr>
+		<tr id="cw">
+			<td style="border-style: none solid solid; padding: 0cm 5.4pt; height: 37.6pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt;">废品明细</td>
+			<td colspan="5" style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 37.6pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			2222222222222222222</td>
+		</tr>
+		<tr style="height: 23.35pt; mso-yfti-irow: 3; mso-yfti-lastrow: yes;">
+			<td style="border-style: none solid solid; padding: 0cm 5.4pt; height: 23.35pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-hansi-font-family: &quot;Times New Roman&quot;;">出厂时间</span></p>
+			</td>
+			<td colspan="2" style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 23.35pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			
+			</td>
+			<td style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 23.35pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p align="center" class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体;">出</span><span style="font-family: 宋体; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-hansi-font-family: &quot;Times New Roman&quot;;">厂</span><span style="font-family: 宋体;">当值保安</span></p>
+			</td>
+			<td colspan="2" style="border-style: none solid solid none; padding: 0cm 5.4pt; height: 23.35pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt;">
+			<p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; mso-bidi-font-family: 宋体;">&nbsp;</span><select name="DATA_15" style="width: 100px;" title="当值保安"><option selected="selected" value="孙国珊">孙国珊</option><option value="孙耀坤">孙耀坤</option><option value="骆容坚">骆容坚</option><option value="林源煜">林源煜</option><option value="郭惠城">郭惠城</option></select></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+ <p>
+ <input type="button" value="提交" onclick=myFunction()>
+ 
+ </p>
+ 
+</body>
+</html>

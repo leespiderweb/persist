@@ -20,9 +20,6 @@ public class validate {
 	
 	 Logger logger = WeixinLogger.getLogger(Xyforce.class);
 	 
-	 
-	  
-	
 	public   boolean check_signature(HttpServletRequest request,String token){
 		
 		boolean signature_is_valid = false;
